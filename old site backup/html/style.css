@@ -1,0 +1,47 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(fonts/BebasBold.otf);
+}
+
+html {
+    background: #383838;
+    font-family: BebasNeue;
+}
+
+h1 {
+    font-size: 48pt;
+    text-align: center;
+    color: #FFA000;
+}
+
+h2 {
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+}
+
+svg {
+    max-height: 70vh;
+    max-width: 90vw;
+    display: block;
+    margin: 5vh auto;
+}
+
+path {
+    fill: #35D249;
+    cursor: pointer;
+}
+
+path:hover {
+    fill: #15b229;
+}
+
+path:active {
+    fill: #008200;
+}
+
+div {
+    text-align: center;
+    color: white;
+    font-size: 20pt;
+}

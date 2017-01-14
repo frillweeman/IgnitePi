@@ -1,0 +1,50 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(fonts/BebasBold.otf);
+}
+
+html {
+    background: #383838;
+    font-family: "Avenir Next";
+}
+
+h1 {
+    font-size: 5.5em;
+    text-align: center;
+    color: #FFA000;
+    margin: 2vh;
+}
+
+h2 {
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    margin: 2vh;
+}
+
+button {
+    height: 70vh;
+    max-height: 90vw;
+    width: 90vw;
+    display: block;
+    margin: 60px auto;
+    font-family: BebasNeue;
+    font-size: 10em;
+    cursor: pointer;
+    border: none;
+    background: #ccc;
+    color: #383838;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+button:active {
+    background: #eee;
+}
+
+#top {
+    height: 20vh;
+    margin-top: 50px;
+}

@@ -1,10 +1,13 @@
 // Get pin from user and initialize it as output
-var pin = prompt("Enter GPIO pin", "15");
+var pin = 15;//prompt("Enter GPIO pin", "15");
+
+// Disable Scrolling
+$(document).bind('touchmove', false);
 
 $(document).ready(function(){
     var button = $("button");
     
-    $.post("setup.php", {pin: pin}, function(data, status) {
+    $.post("/php/setup.php", {pin: pin}, function(data, status) {
         var elStatus = $("#status");
 
         console.log(data);
@@ -20,8 +23,9 @@ $(document).ready(function(){
     }, "text");
 
     // Button Handler
-    button.on("click", function(){
-        $.get("launch.php");
+    button.on("mouseup touchend", function(e){
+        e.preventDefault();
+        $.get("/php/launch.php");
         button.css("background", "red");
         button.text("LAUNCHING");
         setTimeout(function(){
